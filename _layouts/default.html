@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% if site.plugins contains "jekyll-feed" %}{% feed_meta %}{% endif %}
+</head>
+<body>
+    <div class="site-container">
+        {% comment %} Sidebar will go here {% endcomment %}
+        <aside class="site-sidebar">
+            <div class="sidebar-header">
+                <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | default: "My Portfolio" }}</a>
+            </div>
+            {% include navigation.html %}
+        </aside>
+
+        <div class="main-content-area">
+            {% comment %} We might want a top bar here in the future, but for now, just content {% endcomment %}
+            <main class="content-wrapper">
+                {{ content }}
+            </main>
+            {% include footer.html %}
+        </div>
+    </div>
+</body>
+</html>
