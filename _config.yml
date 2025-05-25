@@ -3,8 +3,8 @@ title: Kasper Atkinson - Engineering Portfolio
 email: kna37@cornell.edu
 description: >- # this means to ignore newlines until "baseurl:"
   A brief description of your portfolio and your skills.
-baseurl: "" # the subpath of your site, e.g. /blog. For GitHub Pages user sites, this is often blank.
-url: "" # the base hostname & protocol for your site, e.g. http://example.com. For GitHub Pages, it will be like https://username.github.io
+baseurl: "/Kasper-Atkinson-Portfolio" # the subpath of your site, e.g. /blog. For GitHub Pages user sites, this is often blank.
+url: "https://ubilot3000.github.io" # the base hostname & protocol for your site, e.g. http://example.com. For GitHub Pages, it will be like https://username.github.io
 
 # Author/Social
 author:
