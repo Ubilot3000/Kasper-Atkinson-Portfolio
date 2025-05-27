@@ -1,17 +1,14 @@
 ---
 layout: project
-title: "Awesome Project Alpha"
+title: "Multidimensional Plane Configuration Analysis"
 subtitle: "A brief tagline for this project"
-date: 2023-10-01 # Optional: date of completion or last update
-image: /assets/images/download.png # Path to the project's thumbnail/main image
-tags: [Python, Data Analysis, Web] # Optional: relevant tags
-# project_link: https://example.com/myprojectalpha # Optional: link to live demo
-# repo_link: https://github.com/yourusername/projectalpha # Optional: link to code repo
+date: 2025-2-10
+image: /assets/images/download.png
+tags: [Python, Data Analysis, Web]
 ---
 
 ## Project Overview
-
-This is where you describe your project in detail. Use Markdown.
+Initial test content
 
 ### Key Features
 *   Feature 1

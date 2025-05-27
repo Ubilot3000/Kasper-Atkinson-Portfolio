@@ -6,6 +6,12 @@
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- Favicon declarations -->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/Cornell_Logo_favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/images/Cornell_Logo_favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/images/Cornell_Logo_favicon.png">
+    
     {% if site.plugins contains "jekyll-feed" %}{% feed_meta %}{% endif %}
 </head>
 <body>
@@ -13,7 +19,9 @@
         {% comment %} Sidebar will go here {% endcomment %}
         <aside class="site-sidebar">
             <div class="sidebar-header">
-                <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | default: "My Portfolio" }}</a>
+                <a class="site-title" href="{{ '/' | relative_url }}">
+                    <img src="{{ site.baseurl }}/assets/images/Cornell_Logo.png" alt="{{ site.title }}" class="logo-image">
+                </a>
             </div>
             {% include navigation.html %}
         </aside>

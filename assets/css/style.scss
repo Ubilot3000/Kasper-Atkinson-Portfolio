@@ -3,7 +3,7 @@
 
 // Variables (Streamlit-inspired colors)
 /* stylelint-disable-next-line font-family-name-quotes */
-// @ts-ignore
+/* @ts-ignore */
 $primary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $base-font-size: 16px;
 
@@ -54,6 +54,7 @@ body {
 
   .sidebar-header {
     margin-bottom: 30px;
+
     .site-title {
       font-size: 1.5em;
       font-weight: bold;
@@ -62,6 +63,14 @@ body {
       display: block; // Make it take full width for easier clicking
       padding-bottom: 10px;
       border-bottom: 1px solid $streamlit-border-color;
+
+      > img.logo-image {  // Direct child selector for higher specificity
+        width: 220px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+      }
     }
   }
 }
@@ -139,6 +148,14 @@ body {
 
 .profile-image {
   width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.project-image {
+  width: 450px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -344,12 +361,4 @@ p {
             }
         }
     }
-}
-
-.page-header {
-    margin-bottom: 0.1em;  // Reduce this value from default
-}
-
-.page-title {
-    margin-bottom: 0.1em;  // Reduce this value from default
 }

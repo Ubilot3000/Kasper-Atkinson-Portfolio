@@ -1,11 +1,11 @@
 ---
 layout: project
-title: "Cool Gadget Beta"
+title: "Electronic Propulsion Sizing"
 subtitle: "Revolutionizing how we do X"
-date: 2024-01-15
+date: 2024-8-10
 image: /assets/images/download.png
 tags: [Embedded Systems, C++, IoT]
-repo_link: https://github.com/yourusername/gadgetbeta
+# repo_link: https://github.com/yourusername/gadgetbeta
 ---
 
 ## Project Description
