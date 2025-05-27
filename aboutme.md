@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div class="image-wrapper">
-  <img src="{{ site.baseurl }}/assets/images/headshot.jpg" alt="Kasper Atkinson" class="profile-image">
+  <img src="{{ site.baseurl }}/assets/images/Headshot.jpg" alt="Kasper Atkinson" class="profile-image">
 </div>
 
 Heyo! I’m Kasper.
