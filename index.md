@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Welcome
-permalink: / # Sets this as the root page
+permalink: /welcome/ # Sets this as the root page
 ---
 
 ## Welcome to My Portfolio!

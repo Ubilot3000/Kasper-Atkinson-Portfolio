@@ -74,5 +74,5 @@ permalink: /cv/
     <a href="{{ site.baseurl }}/assets/files/IROP_CV.pdf" class="download-button" download>
         Download Resume (PDF)
     </a>
-</div>
+  </div>
  

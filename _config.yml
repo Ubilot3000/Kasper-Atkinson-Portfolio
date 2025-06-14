@@ -43,6 +43,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - assets/files/project_writeups.docx
 
 plugins:
   - jekyll-feed

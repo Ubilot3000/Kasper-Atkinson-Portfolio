@@ -162,6 +162,20 @@ body {
   object-fit: cover;
 }
 
+// .project-image-large {
+//   width: 1700px;
+//   height: auto;
+//   border-radius: 8px;
+//   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+//   object-fit: cover;
+// }
+
+.image-wrapper-large {
+  float: right;
+  width: 550px; // Wider than image to account for padding
+  margin: -10px 0 20px 40px;
+}
+
 // Ensure paragraphs create proper flow
 p {
   display: block;
@@ -302,7 +316,7 @@ p {
     font-size: 1.1em;
   }
   .project-main-image {
-    max-width: 100%; // Allow main image to be larger
+    max-width: 60%; // Allow main image to be larger
     margin-bottom: 2em;
   }
 }
