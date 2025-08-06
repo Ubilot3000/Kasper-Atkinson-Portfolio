@@ -2,7 +2,7 @@
 layout: project
 title: "Computational Propeller Modelling"
 subtitle: "Math, math, and more math..."
-date: 2024-11-15
+date: 2025-6-15
 image: /assets/images/propeller_forces.png
 tags: [Simulation, Propeller]
 ---

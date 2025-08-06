@@ -4,12 +4,11 @@ title: Projects
 permalink: /projects/
 ---
 
-## My Projects
-
-Here are some of the projects I've worked on. Click on any project to learn more.
+Here are some of the projects I've worked on! Click on any project to learn more.
 
 <div class="project-gallery">
-  {% for project in site.projects %}
+  {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+  {% for project in sorted_projects %}
     <div class="project-card">
       <a href="{{ project.url | relative_url }}">
         {% if project.image %}

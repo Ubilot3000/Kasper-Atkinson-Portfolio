@@ -3,7 +3,7 @@ layout: project
 title: "Wave Energy Converter"
 subtitle: "Just keep swimming..."
 date: 2024-11-15
-image: /assets/images/wec_rendering.png
+image: /assets/images/wec_rendering.PNG
 tags: [Marine Power, Energy Systems]
 ---
 

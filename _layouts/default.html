@@ -14,6 +14,11 @@
     
     {% if site.plugins contains "jekyll-feed" %}{% feed_meta %}{% endif %}
 </head>
+<!-- MathJax support for LaTeX equations -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <body>
     <div class="site-container">
         {% comment %} Sidebar will go here {% endcomment %}

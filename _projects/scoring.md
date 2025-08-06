@@ -2,7 +2,7 @@
 layout: project
 title: "Multidimensional Plane Configuration Analysis"
 subtitle: "A brief tagline for this project"
-date: 2025-2-10
+date: 2025-8-29
 image: /assets/images/download.png
 tags: [Python, Data Analysis, Web]
 ---
