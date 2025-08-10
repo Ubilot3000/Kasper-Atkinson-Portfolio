@@ -23,6 +23,9 @@ collections:
   projects:
     output: true # This will generate a page for each project
     permalink: /projects/:name/ # URL structure for individual project pages
+  reports:
+    output: true # This will generate a page for each report
+    permalink: /reports/:name/ # URL structure for individual report pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -47,3 +50,7 @@ exclude:
 
 plugins:
   - jekyll-feed
+
+include:
+  - assets/covers
+  - assets/files

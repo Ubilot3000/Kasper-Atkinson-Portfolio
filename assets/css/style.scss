@@ -4,6 +4,7 @@
 // Variables (Streamlit-inspired colors)
 /* stylelint-disable-next-line font-family-name-quotes */
 /* @ts-ignore */
+@use "sass:color";
 $primary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $base-font-size: 16px;
 
@@ -94,7 +95,7 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 
   &:hover {
-    background-color: lighten($streamlit-bg, 2%); // Slightly lighter than main bg
+    background-color: color.adjust($streamlit-bg, $lightness: 2%); // Slightly lighter than main bg
     color: $streamlit-heading-color;
     transform: translateY(-2.5px);
     box-shadow: 0 2ps 5px rgba(0,0,0,0.1);
@@ -235,7 +236,7 @@ p {
     border-left: 4px solid $streamlit-accent-color;
     padding: 10px 20px;
     margin: 1.5em 0;
-    background-color: lighten($streamlit-bg, 2%);
+    background-color: color.adjust($streamlit-bg, $lightness: 2%);
     color: $streamlit-subtle-text;
     font-style: italic;
     border-radius: 0 4px 4px 0;
@@ -321,6 +322,60 @@ p {
   }
 }
 
+// Reports gallery
+.report-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 2em;
+
+  .report-card {
+    background-color: $streamlit-content-bg;
+    border: 1px solid $streamlit-border-color;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center; // Match project card alignment
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    height: auto; // Remove fixed height to allow content to determine size
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .report-icon {
+      width: 95%;
+      height: 400px; // Fixed height for consistent image size
+      object-fit: contain;
+      margin: 1e auto;
+      display: block;
+      transition: filter 0.2s ease;
+      box-shadow: none;
+    }
+
+    h3 {
+      padding: 15px 20px;
+      margin: 0;
+      font-size: 1.15em;
+      color: $streamlit-heading-color;
+      font-weight: 600;
+      background-color: $streamlit-content-bg;
+      flex-grow: 1; // Allow text container to fill remaining space
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+  }
+}
+
 
 // Footer (now inside main content area)
 .site-footer {
@@ -367,11 +422,11 @@ p {
         }
         
         &:hover {
-            background-color: darken($streamlit-accent-color, 10%);
+            background-color: color.adjust($streamlit-accent-color, $lightness: -10%);
             transform: translateY(-5px);
             box-shadow: 0 2ps 5px rgba(0,0,0,0.1);
             span {
-                background-color: darken($streamlit-content-bg, 2%);
+                background-color: color.adjust($streamlit-content-bg, $lightness: -2%);
             }
         }
     }
