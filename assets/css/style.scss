@@ -95,7 +95,7 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 
   &:hover {
-    background-color: color.adjust($streamlit-bg, $lightness: 2%); // Slightly lighter than main bg
+    background-color: lighten($streamlit-bg, 2%); // Slightly lighter than main bg
     color: $streamlit-heading-color;
     transform: translateY(-2.5px);
     box-shadow: 0 2ps 5px rgba(0,0,0,0.1);
@@ -236,7 +236,7 @@ p {
     border-left: 4px solid $streamlit-accent-color;
     padding: 10px 20px;
     margin: 1.5em 0;
-    background-color: color.adjust($streamlit-bg, $lightness: 2%);
+    background-color: lighten($streamlit-bg, 2%);
     color: $streamlit-subtle-text;
     font-style: italic;
     border-radius: 0 4px 4px 0;
@@ -422,11 +422,11 @@ p {
         }
         
         &:hover {
-            background-color: color.adjust($streamlit-accent-color, $lightness: -10%);
+            background-color: darken($streamlit-accent-color, 10%);
             transform: translateY(-5px);
             box-shadow: 0 2ps 5px rgba(0,0,0,0.1);
             span {
-                background-color: color.adjust($streamlit-content-bg, $lightness: -2%);
+                background-color: darken($streamlit-content-bg, 2%);
             }
         }
     }
