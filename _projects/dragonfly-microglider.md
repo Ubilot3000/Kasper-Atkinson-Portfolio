@@ -3,7 +3,7 @@ layout: project
 title: "Dragonfly-Inspired Microglider"
 subtitle: "Dragonfly-inspired, MATLAB-approved..."
 date: 2025-8-2
-image: assets/images/download.png
+image: assets/images/dragonfly_cad.png
 tags: [glider, dragonfly, modelling]
 ---
 
