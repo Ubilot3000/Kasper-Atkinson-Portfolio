@@ -3,7 +3,7 @@ layout: project
 title: "Multidimensional Plane Configuration Analysis"
 subtitle: "The life of a plane..."
 date: 2025-8-14
-image: /assets/images/sensitivity.png
+image: /assets/images/download.png
 tags: [MATLAB, Data Analysis, Design Optimization]
 ---
 
@@ -25,17 +25,13 @@ $$
 
 To ensure high-fidelity results, all aerodynamic forces are derived from a pre-compiled database of airfoil performance data. The module selects the appropriate lift and drag characteristics for the wing and tail surfaces based on the calculated Reynolds number for the specific flight condition.
 
-<!-- THIS ONE LEFT TO FILL OUT -->
-
-<img src="{{ site.baseurl }}\assets\images\flight_equlibrium.png" alt="prop-curves" class="project-image" style="width:55%;">
+<img src="{{ site.baseurl }}\assets\images\download.png" alt="prop-curves" class="project-image" style="width:95%;">
 
 With the cruise state established, the module performs a rigorous stability analysis. First, it calculates the longitudinal static margin—the distance between the center of gravity and the neutral point—to ensure the aircraft has a natural tendency to return to its trim angle of attack. Following this, a full dynamic stability analysis is conducted by calculating the eigenvalues of the aircraft's characteristic modes of motion. This includes the longitudinal modes (Phugoid and Short Period) and the lateral modes (Dutch Roll, Spiral, and Roll Subsidence). The real and imaginary components of these eigenvalues are checked to confirm that any oscillations are naturally damped and the aircraft is dynamically stable.
 
 Finally, the module simulates the complete mission profile. It models the takeoff ground roll by integrating the forces of thrust, drag, and friction to calculate the takeoff distance. It also analyzes the aircraft's maneuvering performance to determine the maximum sustainable turn rate. These distinct phases (takeoff, cruise, and turning—arc) combined to calculate a total mission lap time, which serves as the primary fitness score for the optimization algorithm.
 
-<!-- THIS ONE LEFT TO FILL OUT -->
-
-<img src="{{ site.baseurl }}\assets\images\mission_plan.png" alt="prop-curves" class="project-image" style="width:85%;">
+<img src="{{ site.baseurl }}\assets\images\download.png" alt="prop-curves" class="project-image" style="width:55%;">
 
 ### Mechanical Structures
 To accurately model the physical characteristics of any given aircraft design, the mechanical structures module employs a comprehensive, component-based approach. The primary objective is to calculate the aircraft's total mass, the precise location of its center of mass (CM), and its complete inertia tensor. These values are fundamental inputs for the aerodynamics module, as they directly influence flight stability and performance.
@@ -56,8 +52,8 @@ Ultimately, the mechanical structures module's ouput contains a detailed breakdo
 
 ### Propulsion
 
-<div class="image-wrapper-large">
-  <img src="{{ site.baseurl }}\assets\images\motor_interp.png" alt="interpolation function" class="project-image" style="width:100%;">
+<div class="image-wrapper">
+  <img src="{{ site.baseurl }}/assets/images/download.png" alt="interpolation function" class="project-image" style="width:100%;">
 </div>
 
 To guarantee hightest-fidelity results, the propulsion module utilized official performance simulation data from the manufacturer of propellers APC. Amongst other quantities, APC provided torque (Nm), thrust (N), and mechanical power (W) data for a wide range of propeller RPMs and incoming air velocities, $$V_{0}$$. Using this information, it was possible to create an interpolation function: given a specific RPM and velocity, the function would output torque and thrust.
@@ -70,7 +66,7 @@ $$
 
 For a set velocity, this outer-bound operating point was identified using a binary search algorithm. Starting with a set upperbound and lower bound for RPM, it would check if the middle RPM could pass a motor check. If the check was successful (throttle was under 100% and motor power was not at its max), this values was set as the new lowerbound. Honing in on the maximum possible RPM, this process was completed for a range of velocities and the curve-fit outputted to the Aerodynamics module. The final result was two curves: max thrust over $$V_{0}$$ and flight time over $$V_{0}$$. 
 
-<img src="{{ site.baseurl }}\assets\images\propeller_predicted.png" alt="prop-curves" class="project-image" style="width:75%;">
+<img src="{{ site.baseurl }}\assets\images\download.png" alt="prop-curves" class="project-image" style="width:55%;">
 
 ### Optimization
 To effectively search the vast design space for the optimal aircraft configuration, an optimization module based on the principles of natural selection was developed. This genetic algorithm mimics the process of biological evolution, allowing generations of aircraft designs to "evolve" towards a higher-scoring solution. Each potential aircraft design is treated as an "individual" in a population, with its unique set of design parameters encoded into a binary string, analogous to a chromosome.
@@ -79,6 +75,6 @@ The optimization process begins with an initial population of randomly generated
 
 Following the fitness evaluation, a process of "natural selection" occurs, where the higher-scoring "individuals" are more likely to be selected to "reproduce." During reproduction, the binary "chromosomes" of two parent designs are combined through a process called crossover to create offspring. This allows for the exchange of design characteristics, potentially leading to even better solutions. To introduce further diversity and prevent premature convergence on a suboptimal design, a small degree of random mutation is introduced into the offspring's genetic code.
 
-<img src="{{ site.baseurl }}\assets\images\GA_convergence.jpg" alt="population-score-increase" class="project-image" style="width:100%;">
+<img src="{{ site.baseurl }}\assets\images\download.png" alt="population-score-increase" class="project-image" style="width:75%;">
 
 This cycle of evaluation, selection, crossover, and mutation is repeated for a set number of generations. Over time, the population of aircraft designs evolves, with the average fitness of the population generally increasing with each generation. Through this "survival of the fittest" approach, the algorithm systematically explores the design space and converges on the highest-scoring, viable aircraft configuration.

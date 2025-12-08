@@ -4,7 +4,7 @@ title: Reports & Presentations
 permalink: /reports/
 ---
 
-Here are some of my reports and presentations!
+Here are some of my reports and presentations. Click an icon to view.
 
 <div class="report-gallery">
   {% assign sorted_reports = site.reports | sort: "date" | reverse %}
