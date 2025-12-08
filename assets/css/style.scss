@@ -396,6 +396,67 @@ p {
   }
 }
 
+// Code block MATLAB
+
+.language-matlab .highlight {
+  background-color: #2d2d2d;
+  color: #f0f0f0;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+/* Comments (%) */
+.language-matlab .c1 {
+  color: #50C878;
+  font-style: italic;
+}
+
+/* Keywords */
+.language-matlab .k {
+  color: #ff79c6;
+  font-weight: 600;
+}
+
+/* Strings */
+.language-matlab .s {
+  color: #50fa7b;
+}
+
+/* Numbers */
+.language-matlab .mf {
+  color: #bd93f9;
+}
+
+/* Operators */
+.language-matlab .o {
+  color: #f8f8f2;
+}
+
+/* Variables / identifiers */
+.language-matlab .n {
+  color: #f0f0f0;
+}
+
+/* Punctuation */
+.language-matlab .p {
+  color: #f8f8f2;
+}
+
+.language-matlab .nb {
+  color: #8be9fd;   // cyan
+  font-weight: 600;
+}
+
+/* User-defined or recognized function calls */
+.language-matlab .nf {
+  color: #8be9fd;   // cyan
+  font-weight: 600;
+}
+
+
+
 // Resume download button
 .resume-download {
     text-align: center;
