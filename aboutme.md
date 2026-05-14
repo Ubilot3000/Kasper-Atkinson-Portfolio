@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div class="image-wrapper">
-  <img src="{{ site.baseurl }}/assets/images/Headshot.jpg" alt="Kasper Atkinson" class="profile-image">
+  <img src="{{ site.baseurl }}/assets/images/Kasper-Headshot.JPG" alt="Kasper Atkinson" class="profile-image">
 </div>
 
 Heyo! I’m Kasper.
@@ -19,4 +19,4 @@ At Cornell’s Design Build Fly, I’ve had three years of experience as a membe
 <div style="height:40px;"></div>
 
 
-<img src="{{ site.baseurl }}\assets\images\plane_running.JPG" alt="plane-running" class="project-image" style="width:100%;">
+<img src="{{ site.baseurl }}\assets\images\successful-landing.jpg" alt="plane-running" class="project-image" style="width:100%;">

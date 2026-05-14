@@ -7,6 +7,9 @@
 @use "sass:color";
 $primary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $base-font-size: 16px;
+$sidebar-width: 280px;
+$tablet-breakpoint: 900px;
+$phone-breakpoint: 640px;
 
 $streamlit-bg: #f0f2f6; // Light grey background
 $streamlit-content-bg: #ffffff; // White for content cards/areas
@@ -41,7 +44,7 @@ body {
 
 // Sidebar
 .site-sidebar {
-  width: 280px; // Adjust as needed
+  width: $sidebar-width; // Adjust as needed
   background-color: $streamlit-sidebar-bg;
   border-right: 1px solid $streamlit-border-color;
   padding: 20px;
@@ -111,9 +114,10 @@ body {
 .main-content-area {
   flex-grow: 1;
   padding: 30px 40px;
-  margin-left: 280px;
+  margin-left: $sidebar-width;
   background-color: $streamlit-bg;
-  width: calc(100% - 280px); // Explicit width calculation
+  width: calc(100% - #{$sidebar-width}); // Explicit width calculation
+  min-width: 0; // Allow content to shrink without overflowing
 }
 
 .content-wrapper {
@@ -455,7 +459,95 @@ p {
   font-weight: 600;
 }
 
+@media (max-width: $tablet-breakpoint) {
+  body {
+    display: block;
+  }
 
+  .site-container {
+    flex-direction: column;
+  }
+
+  .site-sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 16px 20px;
+    border-right: none;
+    border-bottom: 1px solid $streamlit-border-color;
+    overflow-y: visible;
+
+    .sidebar-header {
+      margin-bottom: 16px;
+
+      .site-title {
+        padding-bottom: 0;
+        border-bottom: none;
+
+        > img.logo-image {
+          width: min(220px, 55vw);
+        }
+      }
+    }
+  }
+
+  .site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .site-nav li {
+    margin-bottom: 0;
+  }
+
+  .site-nav a {
+    padding: 8px 12px;
+  }
+
+  .main-content-area {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .content-wrapper {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .image-wrapper,
+  .image-wrapper-large {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .project-detail .project-main-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $phone-breakpoint) {
+  .main-content-area {
+    padding: 12px;
+  }
+
+  .content-wrapper {
+    padding: 16px;
+  }
+
+  .page-content .page-header h1,
+  .project-detail .page-header h1 {
+    font-size: 1.75em;
+  }
+
+  .content-wrapper article h2,
+  .entry-content h2 {
+    font-size: 1.4em;
+  }
+}
 
 // Resume download button
 .resume-download {

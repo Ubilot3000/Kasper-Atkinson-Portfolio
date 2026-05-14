@@ -4,8 +4,17 @@ title: Coursework
 permalink: /coursework/
 ---
 
-## Coming Up...
+## Junior Year
 
+**Spring 2026**
+- **MAE 3240:** Heat Transfer
+- **MAE 3780:** Mechatronics
+- **MAE 4070:** Flight Dynamics
+- **MAE 4291:** Senior Design
+- **MAE 4510:** Rocket and Air Propulsion
+
+
+**Fall 2025**
 - **MAE 3230:** Introductory Fluid Mechanics
 - **MAE 3270:** Mechanics of Engineering Materials
 - **MAE 3260:** System Dynamics
