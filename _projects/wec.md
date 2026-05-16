@@ -4,8 +4,13 @@ title: "Wave Energy Converter"
 subtitle: "Just keep swimming..."
 date: 2024-11-15
 image: /assets/images/wec_rendering.PNG
+starred: false
 tags: [Marine Power, Energy Systems]
 ---
+
+<div class="image-wrapper-large">
+  <img src="{{ site.baseurl }}/assets/images/wec_rendering.PNG" alt="% errors" class="project-image" style="width:85%;">
+</div>
 
 ### Summary
 As part of Cornell C-Salt’s effort to design a wave-powered desalination plant, our team needed a reliable way to harness ocean motion and convert it into high-pressure fluid flow — enough to drive seawater through a reverse osmosis membrane. As part of the mechanical subteam, I focused on designing the core wave energy converter (WEC): the mechanism that transforms wave motion into useful work. My goal was to find a design that not only suited the wave environment in Guam but could also be prototyped and tested using the tools and resources we had on hand. Living in Ithaca, Guam, was unfortunately not nearby. After evaluating multiple WEC archetypes, I landed on an oscillating flap system that drove a piston pump, acting as a direct mechanical coupling that eliminated electrical conversion losses and gave us the pressures we needed for filtration.

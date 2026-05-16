@@ -4,6 +4,7 @@ title: "eCalc Propulsion Automator"
 subtitle: "Lots of iteration..."
 date: 2000-1-1
 image: /assets/images/thrust_plot.png
+starred: false
 tags: [Embedded Systems, C++, IoT]
 ---
 

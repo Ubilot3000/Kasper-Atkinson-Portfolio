@@ -4,8 +4,9 @@ title: "Dragonfly-Inspired Microglider"
 subtitle: "Dragonfly-inspired, MATLAB-approved..."
 date: 2025-8-2
 image: assets/images/dragonfly_cad.png
+starred: true
 tags: [glider, dragonfly, modelling]
----
+--- 
 
 ### Summary
 This project began as a way to explore the combination of a quadcopter and a fixed-wing aircraft: a dragonfly-inspired microglider. The aim was to see if the agility of an ornithopter-like system could be paired with the efficiency of a glider, and to capture that interaction in a physics-based model. Modelling the system primarily as a tailless, tandem-wing aircraft, I was able to track its longitudinal aerodynamics and stability. Imitating dragonflies, I modeled a tiny mass sliding along the fuselage under a basic feedback loop, letting the glider self-correct its attitude. Once the model was behaving as expected, I used it to explore how stability and efficiency change across thousands of configurations, searching for those rare combinations that glide well but still hold steady in disturbances. The final mathematical model ultimately laid the groundwork for a hardware prototype that marries quadcopter-like maneuvering with fixed-wing-style endurance.

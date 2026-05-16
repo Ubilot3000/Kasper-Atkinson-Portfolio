@@ -4,6 +4,7 @@ title: "Thrust Testing Rig"
 subtitle: "Test, rinse and repeat..."
 date: 2025-1-21
 image: assets/images/testing_rig.jpg
+starred: false
 tags: [Embedded Systems, C++, IoT]
 ---
 

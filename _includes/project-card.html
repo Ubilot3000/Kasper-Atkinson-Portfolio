@@ -1,0 +1,21 @@
+<div class="project-card{% if include.project.starred == true %} is-starred{% endif %}">
+  <a href="{{ include.project.url | relative_url }}">
+    <div class="project-card-image">
+      {% if include.project.image %}
+        <img src="{{ include.project.image | relative_url }}" alt="{{ include.project.title }} thumbnail">
+      {% else %}
+        <img src="{{ '/assets/images/download.png' | relative_url }}" alt="Placeholder image">
+      {% endif %}
+
+      {% if include.project.starred == true %}
+        <img
+          src="{{ '/assets/icons/starred.png' | relative_url }}"
+          alt="Starred project"
+          class="project-star-badge"
+        >
+      {% endif %}
+    </div>
+
+    <h3>{{ include.project.title }}</h3>
+  </a>
+</div>

@@ -1,9 +1,10 @@
 ---
 layout: project
-title: "Multidimensional Plane Configuration Analysis"
+title: "Multidimensional Plane Optimization"
 subtitle: "The life of a plane..."
 date: 2025-8-14
 image: /assets/images/sensitivity.png
+starred: true
 tags: [MATLAB, Data Analysis, Design Optimization]
 ---
 
