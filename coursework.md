@@ -4,13 +4,13 @@ title: Coursework
 permalink: /coursework/
 ---
 
-<section class="coursework-intro">
+<!-- <section class="coursework-intro">
   <p class="coursework-eyebrow">Academic Path</p>
   <p class="coursework-lede">
     A running view of the classes that shaped how I think about flight, controls, structures, thermal systems,
     and design. The layout below keeps the timeline intact, but makes it easier to scan by semester.
   </p>
-</section>
+</section> -->
 
 <section class="coursework-year-group">
   <div class="coursework-year-header">

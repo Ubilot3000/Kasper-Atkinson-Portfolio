@@ -20,7 +20,7 @@ The first thing the tool shows you after you set the geometry is where everythin
 
 <img src="{{ site.baseurl }}\assets\images\massDistribution.png" alt="mass-layout" class="project-image" style="width:75%;">
 
-The side and top view plots show each component as a point mass, with the CG marked in red. For the 2026 competition aircraft, this lands at 13.8% MAC with a total mass of 3.552 kg, with the motor and battery cluster pulled well forward of the wing leading edge. The side view also shows the horizontal tail incidence angle, which at 1° downward is the trim correction baked into the geometry.
+The side and top view plots show each component as a point mass, with the CG marked in red. For the 2026 competition aircraft, this lands at 13% MAC with a total mass of 3.5 kg, with the motor and battery cluster pulled well forward of the wing leading edge. The side view also shows the horizontal tail incidence angle, which at 1° downward is the trim correction baked into the geometry.
 
 <div class="image-wrapper-large" style="width: 35%">
     <img src="{{ site.baseurl }}\assets\images\drag-curve-learn.png" alt="drag-thrust-climb" class="project-image" style="width:100%;">
@@ -29,9 +29,9 @@ The side and top view plots show each component as a point mass, with the CG mar
 
 ### Aerodynamic Performance
 
-With the geometry defined, the tool computes the full aerodynamic picture. The drag decomposition breaks total drag into its profile and induced components as a function of velocity, which immediately shows the classic crossover: induced drag dominates at low speed and falls as $$1/V^2$$, while profile drag climbs with $$V^2$$. Minimum drag sits at the crossover point.
+With the geometry defined, the tool computes the full aerodynamic picture. The drag decomposition breaks total drag into its profile and induced components as a function of velocity. The crossover is immediately visible: induced drag dominates at low speed and falls as $$1/V^2$$, while profile drag climbs with $$V^2$$. Minimum total drag sits at the crossover point, 14.6 m/s for this configuration.
 
-The thrust vs drag plot overlays the propeller's available thrust at a given throttle setting onto the drag curve. Where they intersect is the equilibrium cruise speed. For the competition aircraft at 55% throttle, that equilibrium is 21.6 m/s. The tool also estimates takeoff ground roll and climb performance directly. Ground roll comes out to 17.4 m, well within the 60 m competition runway. Best climb rate is 14.54 m/s at 21.3 m/s, which is healthy. A plane that can't climb in the first straightaway after takeoff is a problem before it becomes a stability problem.
+The climb rate plot takes that drag picture one step further. At 55% throttle, best climb rate is 2.53 m/s at 14.2 m/s. That's the speed to fly right after takeoff. The tool also outputs a thrust vs drag equilibrium plot to find cruise speed at a given throttle setting, and a takeoff ground roll estimate. Together these give a complete operating picture before anything gets built.
 
 ### Static Stability
 
@@ -72,9 +72,9 @@ $$
 
 The eigenvalues of $$A_{lon}$$ and the equivalent lateral matrix give five natural modes. Anything with a negative real part is stable. Anything with a positive real part grows over time.
 
-Using the example of our competition aircraft, our stabilities are imperfect. The short period mode is stable and well-damped, sitting deep in the left half plane. The phugoid, however, is in the right half plane. That means the slow porpoising oscillation the aircraft makes when speed is disturbed will grow rather than decay on its own. This is actually common in lightly loaded competition aircraft where the phugoid damping depends heavily on the drag-to-lift ratio. Mitch knows to manage it with light throttle corrections, and it doesn't affect handling in any meaningful way during a scored run. But it shows up, and the tool shows it.
+Using the example of our competition aircraft, our stabilities are imperfect. The short period mode is stable and well-damped, sitting deep in the left half plane. The phugoid, however, is just barely in the left half plane. That means the slow porpoising oscillation the aircraft makes when speed is disturbed will decay really slowly. This is actually common in lightly loaded competition aircraft where the phugoid damping depends heavily on the drag-to-lift ratio. Pilots typically manage it with light throttle corrections, and it doesn't affect handling in any meaningful way during a scored run.
 
-On the lateral side, Dutch roll and roll subsidence are stable. The spiral mode is barely positive, sitting just right of the origin. That means the aircraft will very slowly tighten a banked turn if left alone. For that mode specifically, what matters is how slowly. The doubling time plot answers that directly.
+On the lateral side, Dutch roll and roll subsidence are stable. The spiral mode is barely positive, sitting just right of the origin. That means the aircraft will slowly tighten a banked turn if left alone. For that mode specifically, what matters is how slowly. The doubling time plot answers that directly.
 
 Spiral divergence at 11.0 seconds is in the green band. Under 3 seconds would be a real problem. Under 8 is uncomfortable. At 11, you have time to notice and correct it before anything dramatic happens. The color-coded thresholds in the chart make that judgment immediate without having to look up what the numbers mean.
 

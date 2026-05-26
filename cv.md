@@ -10,24 +10,24 @@ permalink: /cv/
       <h2>Education</h2>
       <div class="cv-item">
         <h3>Cornell University</h3>
-        <p class="cv-meta">M.Eng. Aerospace Engineering, B.S. Mechanical Engineering</p>
-        <p class="cv-meta">GPA: 4.1/4.0 | Graduation: May 2027</p>
+        <p class="cv-meta">M.Eng. Aerospace Engineering <br> Graduation: May 2027</p>
+        <p class="cv-meta">B.S. Mechanical Engineering <br> GPA: 4.1/4.0 </p>
       </div>
     </section>
 
     <section class="cv-section">
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
       <div class="cv-chip-group">
+        <span class="cv-chip">SolidWorks</span>
+        <span class="cv-chip">ANSYS Fluent</span>
+        <span class="cv-chip">ANSYS Structural</span>
         <span class="cv-chip">Python</span>
         <span class="cv-chip">MATLAB</span>
-        <span class="cv-chip">Java</span>
-        <span class="cv-chip">SolidWorks</span>
-        <span class="cv-chip">Fusion360</span>
-        <span class="cv-chip">ANSYS Fluent</span>
         <span class="cv-chip">XFLR5</span>
         <span class="cv-chip">XFoil</span>
-        <span class="cv-chip">Machine Shop</span>
+        <span class="cv-chip">Machining</span>
         <span class="cv-chip">3D Printing</span>
+        
       </div>
     </section>
 
