@@ -13,8 +13,7 @@ permalink: /
     <div class="about-hero-copy">
       <h2>Hey there! I'm Kasper.</h2>
       <p class="about-lede">
-        I like hard problems, fast learning curves, and the kind of engineering work where the first version
-        almost never survives contact with reality.
+        I like hard problems, fast learning curves, and the kind of engineering where something always breaks before it works.
       </p>
       <div class="about-tag-list">
         <span class="about-tag">Aerospace</span>
@@ -32,6 +31,6 @@ permalink: /
   </section>
 </section>
 
-<div style="height:3px;"></div>
+<div style="height:0px;"></div>
 
 <img src="{{ site.baseurl }}/assets/images/successful-landing.jpg" alt="plane-running" class="about-banner">
