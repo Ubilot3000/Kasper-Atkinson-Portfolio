@@ -19,14 +19,21 @@ permalink: /cv/
       <h2>Technical Skills</h2>
       <div class="cv-chip-group">
         <span class="cv-chip">SolidWorks</span>
+        <span class="cv-chip">Fusion360</span>
+        <span class="cv-chip">DFMA</span>
+        <span class="cv-chip">FMEA</span>
         <span class="cv-chip">ANSYS Fluent</span>
         <span class="cv-chip">ANSYS Structural</span>
         <span class="cv-chip">Python</span>
         <span class="cv-chip">MATLAB</span>
         <span class="cv-chip">XFLR5</span>
         <span class="cv-chip">XFoil</span>
+        <span class="cv-chip">Excel</span>
         <span class="cv-chip">Machining</span>
         <span class="cv-chip">3D Printing</span>
+        <span class="cv-chip">CAM</span>
+        <span class="cv-chip">Complaint Mechanisms</span>
+        
         
       </div>
     </section>
@@ -51,6 +58,18 @@ permalink: /cv/
   <div class="cv-main">
     <section class="cv-section">
       <h2>Work Experience</h2>
+      <article class="cv-item">
+        <div class="cv-item-header">
+          <h3>RTX | Pratt & Whitney</h3>
+          <p class="cv-date">May 2026 - Present</p>
+        </div>
+        <p class="cv-role">Microglider Design Researcher</p>
+        <ul class="cv-bullets">
+          <li>Performed sensitivity analysis on the F135 ECU program FMECA across 6,000 failure modes, identifying two components as leading sources of failure distribution uncertainty ahead of upcoming FDR.</li>
+          <li>Updated 15 FMECA failure modes per bypass-duct design change, maintaining DOORS requirement traceability.</li>
+          <li>Built a Safety Assessment Report module in Cameo, consolidating safety inputs into a reusable MBSE framework.</li>
+        </ul>
+      </article>
 
       <article class="cv-item">
         <div class="cv-item-header">
@@ -59,9 +78,8 @@ permalink: /cv/
         </div>
         <p class="cv-role">Microglider Design Researcher</p>
         <ul class="cv-bullets">
-          <li>Developed MATLAB-based aerodynamic models for a dragonfly-inspired, tailless tandem-wing 22-gram microglider.</li>
+          <li>Developed MATLAB aerodynamic models for a dragonfly-inspired, tailless tandem-wing 22-gram microglider.</li>
           <li>Simulated a mass-shifting pitch control system using PID feedback to achieve sub-10-second stable glide recovery.</li>
-          <li>Ran multi-parameter design sweeps to optimize lift-to-drag ratio while maintaining static and dynamic stability.</li>
           <li>Evaluated 3 trim-linearization methods, judging speed-accuracy tradeoffs to extract short-period and phugoid modes.</li>
         </ul>
       </article>
@@ -73,10 +91,8 @@ permalink: /cv/
         </div>
         <p class="cv-role">Forecasting Analytics Intern</p>
         <ul class="cv-bullets">
-          <li>Delivered ML script combining individually weighted and optimized prediction models to forecast server utilization.</li>
-          <li>Co-developed program to securely retrieve internal company database metrics live for the Comarch Infraspace Cloud.</li>
-          <li>Troubleshot obstacles to internal LLM implementation with the national Polish AI / ML team.</li>
-          <li>Suggested future steps for integrating cloud with larger-variable forecasting models in a department-wide presentation.</li>
+          <li>Engineered predictive models combining 13 weighted algorithms, improving load forecasts and resource allocation.</li>
+          <li>Integrated real-time data pipeline for cloud infrastructure monitoring, reducing reporting lag from 1 hour to seconds.</li>
         </ul>
       </article>
 
@@ -112,7 +128,7 @@ permalink: /cv/
         <ul class="cv-bullets">
           <li>Designed and implemented a program to iteratively assess various propulsion and electronic system configurations.</li>
           <li>Led a 6-person subteam, delegating, tracking, and supervising tasks in weekly meetings.</li>
-          <li>Presented and directed the subteam through 3 critical design reviews to justify design and component decisions.</li>
+          <li>Led three critical design reviews with a 6-person subteam, producing a technical proposal that ranked 8th.</li>
         </ul>
 
         <p class="cv-role">Member of the Propulsion Subteam</p>
