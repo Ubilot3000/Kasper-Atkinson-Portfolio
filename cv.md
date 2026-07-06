@@ -29,6 +29,8 @@ permalink: /cv/
         <span class="cv-chip">XFLR5</span>
         <span class="cv-chip">XFoil</span>
         <span class="cv-chip">Excel</span>
+        <span class="cv-chip">DOORS</span>
+        <span class="cv-chip">Cameo</span>
         <span class="cv-chip">Machining</span>
         <span class="cv-chip">3D Printing</span>
         <span class="cv-chip">CAM</span>
@@ -63,10 +65,10 @@ permalink: /cv/
           <h3>RTX | Pratt & Whitney</h3>
           <p class="cv-date">May 2026 - Present</p>
         </div>
-        <p class="cv-role">Microglider Design Researcher</p>
+        <p class="cv-role">Reliability Systems Engineer</p>
         <ul class="cv-bullets">
-          <li>Performed sensitivity analysis on the F135 ECU program FMECA across 6,000 failure modes, identifying two components as leading sources of failure distribution uncertainty ahead of upcoming FDR.</li>
-          <li>Updated 15 FMECA failure modes per bypass-duct design change, maintaining DOORS requirement traceability.</li>
+          <li>Audited F135's first CMC blade-outer-seal, identifying absent rubbing and thermal-gradient wear modes and authoring test-specific severity categorizations to expand DFMEA comprehensiveness from 10 to 14 modes.</li>
+          <li>Performed FMECA sensitivity analysis, finding a 25-hour MTBF swing from failure-distribution assumptions.</li>
           <li>Built a Safety Assessment Report module in Cameo, consolidating safety inputs into a reusable MBSE framework.</li>
         </ul>
       </article>

@@ -12,9 +12,9 @@ permalink: /
   <section class="about-hero">
     <div class="about-hero-copy">
       <h2>Hey there! I'm Kasper.</h2>
-      <p class="about-lede">
+      <!-- <p class="about-lede">
         If engineering was easy - it wouldn't be fun.
-      </p>
+      </p> -->
       <div class="about-tag-list">
         <span class="about-tag">Aerospace</span>
         <span class="about-tag">Design Build Fly</span>
